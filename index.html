@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Photography Web</title>
+  </head>
+  <body>
+    <div class="backBaseNav" id="backBaseNav"></div>
+    <header id="home" class="home">
+      <i class="fa-solid fa-bars openNavBar" onclick="openNavBar()"></i>
+      <h1>
+        <img src="assets/logoCrop.png" alt="logo Img" />
+        Sufiyan <br />
+        Photographer
+      </h1>
+      <nav class="navBar">
+        <span class="baseForNavClose"
+          ><i class="fa-solid fa-x navClose" onclick="navClose()"></i
+        ></span>
+        <ul>
+          <li><a href="#sectionIntro" onclick="navClose()">Home</a></li>
+          <li><a href="#portfolio" onclick="navClose()">Portfolio</a></li>
+          <li>
+            <a href="#customerReviews" onclick="navClose()">Customer Reviews</a>
+          </li>
+          <li><a href="#contact" onclick="navClose()">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- section 1 -->
+
+    <section class="sectionIntro" id="sectionIntro">
+      <div class="imgDiv">
+        <img src="assets/MyImg.jpg" alt="My Image" />
+      </div>
+      <div class="introSectionContents">
+        <strong>"Capturing Moments, Creating Memories."</strong>
+        <p>Services:</p>
+        <menu>
+          <li>Wedding Photography</li>
+          <li>Event Photography</li>
+          <li>Portrait photography</li>
+          <li>Nature photography</li>
+          <li>Travel photography</li>
+          <li>Commercial photography</li>
+        </menu>
+      </div>
+    </section>
+
+    <!-- Section 2 About Me -->
+
+    <section class="aboutmeSection">
+      <div class="subAboutSection">
+        <h2>About Me</h2>
+        <p>
+          My name is Sufiyan Shaikh. I stay in Mumbai. As a dedicated
+          photographer, I specialize in capturing the vibrant essence of life’s
+          most memorable events. My work is about more than just photographs;
+          it's about preserving emotions, connections, and stories that people
+          can cherish forever.
+        </p>
+      </div>
+    </section>
+
+    <!-- section 3  Portfolio-->
+
+    <section class="portfolio" id="portfolio">
+      <h2>My Photos, Your Stories</h2>
+      <div class="subPortfolio">
+        <div class="gallery">
+          <div class="image">
+            <img src="assets/party.jpg" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/wedding.jpg" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/GallaryBgTop.webp" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/wedding2.jpg" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/GalleryBgSecondTop.jpg" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/StImg5.jpg" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/StImg3.webp" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/danial.jpg" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/StImg4.webp" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/Wedding1.jpg" alt="portfolio" />
+          </div>
+          <div class="image">
+            <img src="assets/apply.webp" alt="portfolio" />
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-box">
+        <div class="subPreviewBox">
+          <div class="details">
+            <span class="title">
+              <p class="current-img"></p>
+              /
+              <p class="total-img"></p>
+            </span>
+            <i class="fa-solid fa-x closeIccon"></i>
+          </div>
+
+          <div class="img-box">
+            <div class="slide prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div class="slide next">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <img src="" alt="Portfolio Image" />
+          </div>
+        </div>
+      </div>
+      <div class="seeMorePortfolio">
+        <a href="portfolio.html"
+          >See More <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section Customer Reviews --->
+
+    <section class="reviewSection" id="customerReviews">
+      <span class="spanBefore"></span>
+      <span class="spanAfter"></span>
+
+      <div class="reviewHere">
+        <strong>Customer Stories</strong>
+        <div class="review" id="review">
+          <div class="peopleImg">
+            <img src="" width="50px" alt="person Image" />
+          </div>
+          <span></span>
+          <p></p>
+        </div>
+        <div class="btns">
+          <button id="reviewprevBtn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="reviewnextBtn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="starsDate">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="date">
+            <div class="date">5th Jan 2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact Section -->
+
+    <section class="contactSection" id="contact">
+      <div class="leave-message" id="leave-message">
+        <h2>Get In Touch</h2>
+        <p>
+          Thank you for reaching out to us. Leave a meassage our team will get
+          in touch with you shortly. Have a nice day!
+        </p>
+        <form
+          action="https://formsubmit.co/funlotsof09@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Customer Query" />
+          <label for="name">Name*</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Name"
+            required
+          />
+
+          <label for="phone">Phone Number*</label>
+          <input
+            type="number"
+            id="phone"
+            name="Number"
+            placeholder="Enter Phone No."
+            required
+          />
+
+          <label for="email">Email*</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Enter Email"
+            required
+          />
+
+          <label for="Service">Photography Service*</label>
+
+          <select name="photographyService" id="photographyService" required>
+            <option value="" disabled selected>Select Service</option>
+            <option value="Wedding Photography">Wedding Photography</option>
+            <option value="Event Photography">Event Photography</option>
+            <option value="Portrait photography">Portrait photography</option>
+            <option value="Commercial photography">
+              Commercial photography
+            </option>
+            <option value="Travel photography">Travel photography</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Describe"
+          ></textarea>
+          <div class="emailWhatsappBtn">
+            <button type="submit">Send on Email</button><span>OR</span>
+            <a class="whatsapBtn" onclick="sendtoWhatsapp()"
+              >Send on Whatsapp</a
+            >
+          </div>
+          <p class="alertbelowBtn" id="alertbelowBtn">
+            Please fill the required "*" Input
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footerSection">
+      <p>Thank you for visiting my Website.</p>
+      <div class="sciolLinkCopyRight">
+        <div class="copyRight">&copy; 2024 - 2030. All Rights Reserved</div>
+
+        <menu>
+          <a href="#" target="_blank" class="fbookA"
+            ><i class="fa-brands fa-facebook fbook"></i
+          ></a>
+          <a href="#" target="_blank" class="twitterA"
+            ><i class="fa-brands fa-twitter twitter"></i
+          ></a>
+          <a href="#" target="_blank" class="instagramA"
+            ><i class="fa-brands fa-instagram instagram"></i
+          ></a>
+          <a href="#" target="_blank" class="wsappA"
+            ><i class="fa-brands fa-whatsapp wsapp"></i
+          ></a>
+        </menu>
+      </div>
+    </footer>
+
+    <a href="#sectionIntro" id="scrollProgress" class="GoUp"
+      ><i class="fa-solid fa-angle-up" id="progressValue"></i
+    ></a>
+
+    <a
+      href="https://wa.me/+917304888579?text=Hi"
+      target="_blank"
+      class="bottomWhatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+917304888579" class="bottomCallUs">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+    <script src="js/testinomial.js"></script>
+
+    <!-- Contact Section Whatsapp -->
+
+    <script>
+      function sendtoWhatsapp() {
+        let messageOnTop = "-------Customer Message-------";
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let email = document.getElementById("email").value;
+        let photographyService =
+          document.getElementById("photographyService").value;
+        let message = document.getElementById("message").value;
+        let alertbelowBtn = document.getElementById("alertbelowBtn");
+
+        if (!name || !phone || !email || !photographyService) {
+          alertbelowBtn.style.display = "block";
+          return;
+        } else {
+          alertbelowBtn.style.display = "none";
+        }
+
+        let url =
+          "https://wa.me/917304888579?text=" +
+          messageOnTop +
+          "%0a" +
+          "Name: " +
+          name +
+          "%0a" +
+          "Phone: " +
+          phone +
+          "%0a" +
+          "email: " +
+          email +
+          "%0a" +
+          "Photography Service: " +
+          photographyService +
+          "%0a" +
+          "message: " +
+          message;
+
+        window.open(url, "_blank").focus();
+      }
+    </script>
+  </body>
+</html>

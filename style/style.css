@@ -1,0 +1,1003 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+img {
+  width: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.portfolio,
+.reviewSection,
+.contactSection,
+.footerSection {
+  margin-top: 80px;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.backBaseNav {
+  height: 17vh;
+  display: none;
+}
+
+.home,
+.onSrcollCssHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+.home .openNavBar,
+.onSrcollCssHome .openNavBar {
+  display: none;
+}
+.home h1,
+.onSrcollCssHome h1 {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: none;
+}
+.home h1 img,
+.onSrcollCssHome h1 img {
+  position: absolute;
+  width: 3rem;
+  left: -49px;
+  top: -29px;
+}
+.home nav .baseForNavClose,
+.onSrcollCssHome nav .baseForNavClose {
+  display: none;
+}
+.home nav ul,
+.onSrcollCssHome nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.home nav ul li a,
+.onSrcollCssHome nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #fff;
+  position: relative;
+}
+.home nav ul li a::after,
+.onSrcollCssHome nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0px;
+  left: 0px;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s ease-in-out;
+}
+.home nav ul li a:hover::after,
+.onSrcollCssHome nav ul li a:hover::after {
+  width: 100%;
+}
+
+.onSrcollCssHome {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  justify-content: space-evenly;
+  padding: 6px 25px;
+  z-index: 3;
+  box-shadow: 0px 0px 7px 0px #fff;
+}
+.onSrcollCssHome h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.onSrcollCssHome h1 img {
+  width: 2.5rem;
+  left: -40px;
+  top: -25px;
+}
+.onSrcollCssHome nav .baseForNavClose {
+  display: none;
+}
+.onSrcollCssHome nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.onSrcollCssHome nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 910px) {
+  .backBaseNav {
+    height: 14vh;
+  }
+  .home,
+  .onSrcollCssHome {
+    position: relative;
+    justify-content: space-between;
+    padding: 15px 55px;
+  }
+  .home h1,
+  .onSrcollCssHome h1 {
+    font-size: 1.2em;
+  }
+  .home .openNavBar,
+  .onSrcollCssHome .openNavBar {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 38px;
+    font-size: 1.6em;
+  }
+  .home .navBar,
+  .onSrcollCssHome .navBar {
+    top: 0px;
+    left: -5580px;
+    background-color: rgba(0, 0, 0, 0.6039215686);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transition: left 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 5;
+  }
+  .home .navBar.showNavbar,
+  .onSrcollCssHome .navBar.showNavbar {
+    left: 0px;
+  }
+  .home .navBar .baseForNavClose,
+  .onSrcollCssHome .navBar .baseForNavClose {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: -666px;
+    padding: 50px;
+    background-color: #fff;
+    border-bottom-left-radius: 100%;
+    transition: right 0.9s ease-in-out;
+  }
+  .home .navBar .baseForNavClose.navCloseAnimate,
+  .onSrcollCssHome .navBar .baseForNavClose.navCloseAnimate {
+    right: 0px;
+    z-index: 1;
+  }
+  .home .navBar .baseForNavClose .navClose,
+  .onSrcollCssHome .navBar .baseForNavClose .navClose {
+    font-size: 1.3em;
+    color: #000;
+  }
+  .home .navBar ul,
+  .onSrcollCssHome .navBar ul {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    align-items: normal;
+    padding: 55px 125px;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+  }
+  .home .navBar ul li a,
+  .onSrcollCssHome .navBar ul li a {
+    font-size: 2em;
+  }
+  .onSrcollCssHome {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+    padding: 7px 55px;
+  }
+  .onSrcollCssHome .openNavBar {
+    top: 20px;
+    right: 35px;
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 458px) {
+  .home .navBar ul,
+  .onSrcollCssHome .navBar ul {
+    padding: 15px;
+  }
+}
+/* Hero Section */
+.sectionIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  padding: 5px 10px;
+}
+.sectionIntro .imgDiv {
+  width: 320px;
+}
+.sectionIntro .imgDiv img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sectionIntro .introSectionContents {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  align-items: normal;
+  flex-direction: column;
+}
+.sectionIntro .introSectionContents strong {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.sectionIntro .introSectionContents p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.sectionIntro .introSectionContents menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  align-items: normal;
+}
+.sectionIntro .introSectionContents menu li {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: none;
+}
+
+@media screen and (max-width: 750px) {
+  .sectionIntro {
+    flex-direction: column;
+  }
+  .sectionIntro .imgDiv {
+    width: 80%;
+  }
+  .sectionIntro .introSectionContents {
+    margin: 55px 2px;
+    padding: 25px 15px;
+  }
+  .sectionIntro .introSectionContents strong {
+    font-size: 1.1em;
+  }
+  .sectionIntro .introSectionContents p {
+    font-size: 1em;
+  }
+}
+/* About Me */
+.aboutmeSection {
+  padding: 55px 10px;
+  position: relative;
+  isolation: isolate;
+}
+.aboutmeSection::before {
+  content: "";
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-5deg);
+}
+.aboutmeSection .subAboutSection {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+  text-align: center;
+}
+.aboutmeSection .subAboutSection h2 {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: none;
+  border-bottom: 1px solid;
+}
+.aboutmeSection .subAboutSection p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+/* Portfolio Section */
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.portfolio h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: none;
+  border-bottom: 1px solid;
+}
+.portfolio .subPortfolio .gallery {
+  padding: 15px 20px;
+  margin: 100px auto 50px;
+  -moz-columns: 300px;
+       columns: 300px;
+}
+.portfolio .subPortfolio .gallery .image {
+  margin: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio .subPortfolio .gallery .image img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.portfolio .subPortfolio .gallery .image:hover img {
+  transform: scale(0.6) rotate(-15deg);
+}
+.portfolio .seeMorePortfolio a {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.3em;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 3px 10px;
+  position: relative;
+  transition: color 0.3s ease;
+  border-radius: 3px;
+  color: #fff;
+}
+.portfolio .seeMorePortfolio a:hover {
+  color: #000;
+}
+.portfolio .seeMorePortfolio a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+.portfolio .seeMorePortfolio a:hover::before {
+  width: 100%;
+}
+
+.bgPorfolio {
+  background: url("../assets/bgPortfolio.jpg");
+  background-position-y: 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio {
+    padding: 10px;
+  }
+  .portfolio .subPortfolio .gallery {
+    -moz-columns: 150px;
+         columns: 150px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .portfolio {
+    padding: 10px;
+  }
+  .portfolio .subPortfolio .gallery {
+    -moz-columns: 100px;
+         columns: 100px;
+  }
+}
+/* Portfolio Preview Box */
+.preview-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.737254902);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  color: #fff;
+  z-index: 5;
+}
+.preview-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+}
+.preview-box .subPreviewBox {
+  position: relative;
+  width: 95%;
+  height: 95%;
+  z-index: 5;
+  padding: 0 5px 5px 5px;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.preview-box .subPreviewBox .details {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px 12px 10px;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+.preview-box .subPreviewBox .details .title {
+  display: flex;
+  align-items: center;
+}
+.preview-box .subPreviewBox .details i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.preview-box .subPreviewBox .details i:hover {
+  color: rgb(217, 30, 30);
+}
+.preview-box .subPreviewBox .img-box {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+.preview-box .subPreviewBox .img-box .slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3em;
+  background-color: #fff;
+  cursor: pointer;
+  color: #000;
+  width: 25px;
+  line-height: 50px;
+  text-align: center;
+}
+.preview-box .subPreviewBox .img-box .prev {
+  left: 0;
+}
+.preview-box .subPreviewBox .img-box .next {
+  right: 0;
+}
+.preview-box .subPreviewBox .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 785px) {
+  .preview-box .subPreviewBox {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .preview-box .subPreviewBox .details {
+    background-color: transparent;
+  }
+  .preview-box .subPreviewBox .img-box {
+    width: 100%;
+    height: 90%;
+  }
+  .preview-box .subPreviewBox .img-box .slide {
+    top: 55%;
+    font-size: 0.9em;
+    line-height: 20px;
+  }
+}
+/* Review section */
+.reviewSection {
+  background: linear-gradient(45deg, #f9c74f, #f9844a, #90be6d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 55px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 65px;
+  position: relative;
+}
+.reviewSection .spanBefore,
+.reviewSection .spanAfter {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: #000;
+  -webkit-mask-size: 120px 10px;
+          mask-size: 120px 10px;
+  -webkit-mask-repeat: repeat-x;
+          mask-repeat: repeat-x;
+}
+.reviewSection .spanBefore {
+  -webkit-mask-image: url("../assets/triangle.svg");
+          mask-image: url("../assets/triangle.svg");
+  top: 0;
+}
+.reviewSection .spanAfter {
+  bottom: -40px;
+  -webkit-mask-image: url("../assets/triangleTurn.svg");
+          mask-image: url("../assets/triangleTurn.svg");
+}
+.reviewSection .reviewHere {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+}
+.reviewSection .reviewHere strong {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.8em;
+  border-bottom: 1px solid;
+  margin-bottom: 15px;
+}
+.reviewSection .reviewHere .review {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 15px;
+  padding-bottom: 68px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.reviewSection .reviewHere .review .peopleImg {
+  width: 102px;
+  height: 85px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.reviewSection .reviewHere .review .peopleImg img {
+  width: 100%;
+  transform: translateY(15px);
+  scale: 2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reviewSection .reviewHere .review span {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 15px 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+.reviewSection .reviewHere .review p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.1em;
+  text-align: center;
+}
+.reviewSection .reviewHere .btns {
+  position: absolute;
+  top: 26px;
+  right: 25px;
+  border-bottom: none;
+}
+.reviewSection .reviewHere .btns button {
+  background-color: #000;
+  border-radius: 5px;
+  outline: none;
+  padding: 7px 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  font-family: sans-serif;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2588235294);
+  color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+.reviewSection .reviewHere .btns button:hover {
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2588235294);
+  transform: scale(1.05);
+}
+.reviewSection .reviewHere .starsDate {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: none;
+}
+.reviewSection .reviewHere .starsDate .star {
+  color: orangered;
+}
+
+@media screen and (max-width: 777px) {
+  .reviewSection {
+    flex-direction: column;
+    min-height: 85vh;
+    width: 100%;
+  }
+  .reviewSection .reviewHere {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviewSection {
+    flex-direction: column;
+  }
+  .reviewSection .reviewHere {
+    width: 100%;
+  }
+  .reviewSection .reviewHere .btns {
+    top: 20px;
+  }
+  .reviewSection .reviewHere strong {
+    font-size: 1.2em;
+  }
+}
+/* Contact section */
+.contactSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px;
+  margin: none auto;
+}
+.contactSection .leave-message {
+  width: 60%;
+}
+.contactSection .leave-message h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 20px;
+  border-bottom: 3px solid;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.contactSection .leave-message p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: none;
+  margin-bottom: 20px;
+}
+.contactSection .leave-message form {
+  display: flex;
+  flex-direction: column;
+}
+.contactSection .leave-message form label {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: none;
+  margin-bottom: 8px;
+}
+.contactSection .leave-message form input,
+.contactSection .leave-message form textarea,
+.contactSection .leave-message form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contactSection .leave-message form input::-moz-placeholder, .contactSection .leave-message form textarea::-moz-placeholder, .contactSection .leave-message form select::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: none;
+}
+.contactSection .leave-message form input::placeholder,
+.contactSection .leave-message form textarea::placeholder,
+.contactSection .leave-message form select::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: none;
+}
+.contactSection .leave-message form #phone[type=number]::-webkit-inner-spin-button,
+.contactSection .leave-message form #phone[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contactSection .leave-message form select {
+  cursor: pointer;
+}
+.contactSection .leave-message form textarea {
+  resize: none;
+  height: 120px;
+}
+.contactSection .leave-message form .emailWhatsappBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.contactSection .leave-message form .emailWhatsappBtn button,
+.contactSection .leave-message form .emailWhatsappBtn .whatsapBtn {
+  padding: 12px;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 50%;
+}
+.contactSection .leave-message form .emailWhatsappBtn button {
+  color: #fff;
+  background: none;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.3em;
+  border: 1px solid;
+  position: relative;
+  border-radius: 3px;
+  color: #fff;
+  transition: color 0.3s ease;
+  /*  */
+}
+.contactSection .leave-message form .emailWhatsappBtn button:hover {
+  color: #000;
+}
+.contactSection .leave-message form .emailWhatsappBtn button::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+.contactSection .leave-message form .emailWhatsappBtn button:hover::before {
+  width: 100%;
+}
+.contactSection .leave-message form .emailWhatsappBtn .whatsapBtn {
+  color: #fff;
+  background: none;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.3em;
+  border: 1px solid;
+  position: relative;
+  border-radius: 3px;
+  color: #fff;
+  transition: color 0.3s ease;
+  /*  */
+}
+.contactSection .leave-message form .emailWhatsappBtn .whatsapBtn:hover {
+  color: #000;
+}
+.contactSection .leave-message form .emailWhatsappBtn .whatsapBtn::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  background-color: #25d366;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+.contactSection .leave-message form .emailWhatsappBtn .whatsapBtn:hover::before {
+  width: 100%;
+}
+.contactSection .leave-message form .alertbelowBtn {
+  color: red;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    flex-direction: column;
+    padding: 12px;
+  }
+  .contactSection .leave-message {
+    width: 100%;
+  }
+  .contactSection .leave-message form .emailWhatsappBtn {
+    flex-direction: column;
+  }
+  .contactSection .leave-message form .emailWhatsappBtn button,
+  .contactSection .leave-message form .emailWhatsappBtn .whatsapBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 517px) {
+  .contactSection .leave-message .emailWhatsappBtn button,
+  .contactSection .leave-message .emailWhatsappBtn .whatsapBtn {
+    font-size: 0.9em;
+  }
+}
+/* Footer Section */
+.footerSection {
+  padding: 5px 15px 55px 15px;
+}
+.footerSection p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.4em;
+  padding: 5px 10px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.footerSection .sciolLinkCopyRight {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footerSection .sciolLinkCopyRight .copyRight {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3em;
+  text-align: center;
+}
+.footerSection .sciolLinkCopyRight menu a {
+  margin: 2px 10px;
+  padding: 5px;
+  border-radius: 100%;
+}
+.footerSection .sciolLinkCopyRight menu a i {
+  color: #fff;
+  font-size: 1.3em;
+  transition: color 0.3s ease-in-out;
+}
+.footerSection .sciolLinkCopyRight menu .fbookA:hover .fbook {
+  color: #0a65fe;
+}
+.footerSection .sciolLinkCopyRight menu .twitterA:hover .twitter {
+  color: #1da1f3;
+}
+.footerSection .sciolLinkCopyRight menu .instagramA:hover .instagram {
+  color: #ff00d3;
+}
+.footerSection .sciolLinkCopyRight menu .wsappA:hover .wsapp {
+  color: #32b71a;
+}
+
+.bottomWhatsapp,
+.bottomCallUs {
+  font-size: 1.4em;
+  color: #fff;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border: 1px solid;
+  border-radius: 100%;
+  padding: 6px 10px;
+}
+
+.GoUp {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  bottom: 115px;
+  right: 10px;
+}
+.GoUp i {
+  display: block;
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
+
+.bottomWhatsapp {
+  bottom: 63px;
+  font-size: 1.6em;
+  background-color: green;
+}
+
+.bottomCallUs {
+  padding: 6px 8px;
+  background-color: lightskyblue;
+}/*# sourceMappingURL=style.css.map */
