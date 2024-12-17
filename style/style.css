@@ -173,13 +173,13 @@ body {
   .onSrcollCssHome .navBar {
     top: 0px;
     left: -5580px;
-    background-color: rgba(0, 0, 0, 0.6039215686);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     transition: left 0.3s ease-in-out;
     overflow: hidden;
-    z-index: 5;
+    z-index: 8;
   }
   .home .navBar.showNavbar,
   .onSrcollCssHome .navBar.showNavbar {
@@ -554,7 +554,7 @@ body {
     height: 90%;
   }
   .preview-box .subPreviewBox .img-box .slide {
-    top: 55%;
+    top: 53%;
     font-size: 0.9em;
     line-height: 20px;
   }
@@ -956,7 +956,8 @@ body {
 }
 
 .bottomWhatsapp,
-.bottomCallUs {
+.bottomCallUs,
+.GoUp {
   font-size: 1.4em;
   color: #fff;
   position: fixed;
@@ -965,40 +966,43 @@ body {
   border: 1px solid;
   border-radius: 100%;
   padding: 6px 10px;
+  box-shadow: 1px 1px 8px gray;
 }
 
 .GoUp {
   position: fixed;
-  height: 50px;
-  width: 50px;
+  /* height: 45px;
+  width: 45px; */
   display: grid;
   place-items: center;
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
   cursor: pointer;
-  bottom: 10px;
+  bottom: 11px;
+  color: #000;
+  padding: 7px 10px;
   right: 3px;
-}
-.GoUp i {
-  display: block;
-  height: calc(100% - 8px);
-  width: calc(100% - 8px);
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 35px;
-  color: #001a2e;
+  /* i {
+    display: block;
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  } */
 }
 
 .bottomWhatsapp {
-  bottom: 110px;
+  bottom: 98px;
   font-size: 1.6em;
   background-color: green;
 }
 
 .bottomCallUs {
-  bottom: 65px;
+  bottom: 54px;
   padding: 6px 8px;
   background-color: lightskyblue;
 }/*# sourceMappingURL=style.css.map */

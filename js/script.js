@@ -29,7 +29,7 @@ const headerFixedOnScroll = () => {
 
 window.addEventListener("scroll", headerFixedOnScroll);
 
-let calcScrollValue = () => {
+/* let calcScrollValue = () => {
   let scrollProgress = document.getElementById("scrollProgress");
   let progressValue = document.getElementById("progressValue");
   let pos = document.documentElement.scrollTop;
@@ -43,7 +43,7 @@ let calcScrollValue = () => {
   scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 };
 window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
+window.onload = calcScrollValue; */
 
 /* Galllery Section JS */
 const gallery = document.querySelectorAll(".gallery .image"),
