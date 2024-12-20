@@ -27,7 +27,21 @@ const headerFixedOnScroll = () => {
   }
 };
 
+let scrollProgress = document.getElementById("scrollProgress");
+
 window.addEventListener("scroll", headerFixedOnScroll);
+
+window.onscroll = function () {
+  ScrollForBtnTop();
+};
+
+const ScrollForBtnTop = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollProgress.style.display = "block";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+};
 
 /* let calcScrollValue = () => {
   let scrollProgress = document.getElementById("scrollProgress");
