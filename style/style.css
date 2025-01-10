@@ -310,10 +310,10 @@ body {
   transition: transition-delay 0.7s ease-in-out, opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 .sectionIntro .imgDiv {
-  transition-delay: 200ms;
+  transition-delay: 100ms;
 }
 .sectionIntro .introSectionContents {
-  transition-delay: 400ms;
+  transition-delay: 100ms;
 }
 .sectionIntro .show {
   opacity: 1;
@@ -385,10 +385,10 @@ body {
   transition: transition-delay 0.7s ease-in-out, opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 .aboutmeSection .abouthead {
-  transition-delay: 200ms;
+  transition-delay: 100ms;
 }
 .aboutmeSection .aboutparagrapgh {
-  transition-delay: 400ms;
+  transition-delay: 100ms;
 }
 .aboutmeSection .show {
   opacity: 1;
