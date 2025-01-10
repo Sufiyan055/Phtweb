@@ -14,6 +14,7 @@
     <title>Photography Web</title>
   </head>
   <body>
+    <div id="forGoUp"></div>
     <div class="backBaseNav" id="backBaseNav"></div>
     <header id="home" class="home">
       <i class="fa-solid fa-bars openNavBar" onclick="openNavBar()"></i>
@@ -40,10 +41,10 @@
     <!-- section 1 -->
 
     <section class="sectionIntro" id="sectionIntro">
-      <div class="imgDiv">
+      <div class="imgDiv hidden">
         <img src="assets/MyImg.jpg" alt="My Image" />
       </div>
-      <div class="introSectionContents">
+      <div class="introSectionContents hidden">
         <strong>"Capturing Moments, Creating Memories."</strong>
         <p>Services:</p>
         <menu>
@@ -61,8 +62,8 @@
 
     <section class="aboutmeSection">
       <div class="subAboutSection">
-        <h2>About Me</h2>
-        <p>
+        <h2 class="abouthead hidden">About Me</h2>
+        <p class="aboutparagrapgh hidden">
           My name is Sufiyan Shaikh, and I am a passionate photographer based in
           Mumbai. I specialize in capturing the vibrant essence of life’s most
           cherished moments. My work goes beyond just taking photographs—it's
@@ -278,7 +279,16 @@
       </div>
     </footer>
 
-    <a href="#backBaseNav" id="scrollProgress" class="GoUp"
+    <div class="autherName">
+      Made by
+      <a
+        href="https://sufiyan055.github.io/MyPortfolio-website/"
+        target="_blank"
+        >Sufiyan Shaikh</a
+      >
+    </div>
+
+    <a href="#forGoUp" id="scrollProgress" class="GoUp"
       ><i class="fa-solid fa-angle-up" id="progressValue"></i
     ></a>
 

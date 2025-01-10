@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap");
 
 * {
   margin: 0;
@@ -243,6 +243,7 @@ body {
   justify-content: space-evenly;
   flex-direction: row-reverse;
   padding: 5px 10px;
+
   .imgDiv {
     width: 320px;
     img {
@@ -269,6 +270,24 @@ body {
         @include robotoFont(300, none);
       }
     }
+  }
+  .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: 0.6s ease-in-out;
+  }
+
+  .imgDiv {
+    transition-delay: 200ms;
+  }
+  .introSectionContents {
+    transition-delay: 400ms;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
   }
 }
 
@@ -319,6 +338,25 @@ body {
     p {
       @include robotoFont(300, 1.3em);
     }
+  }
+
+  .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: 0.6s ease-in-out;
+  }
+
+  .abouthead {
+    transition-delay: 200ms;
+  }
+  .aboutparagrapgh {
+    transition-delay: 400ms;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
   }
 }
 
@@ -876,6 +914,17 @@ body {
         }
       }
     }
+  }
+}
+.autherName {
+  text-align: center;
+  padding: 2px;
+  a {
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: "Great Vibes", sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
   }
 }
 

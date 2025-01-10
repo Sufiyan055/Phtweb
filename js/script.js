@@ -43,6 +43,17 @@ const ScrollForBtnTop = () => {
   }
 };
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+
 /* let calcScrollValue = () => {
   let scrollProgress = document.getElementById("scrollProgress");
   let progressValue = document.getElementById("progressValue");
